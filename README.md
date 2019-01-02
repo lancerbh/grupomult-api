@@ -26,9 +26,9 @@ O modelo abaixo DEVE ser utilizado para o desenvolvimento do exercício. Esta é
 Utilizando a implementação de referência, o diagrama de atividades e as entidades definidas como base para implementação do exercício, o candidato DEVE seguir as seguintes definições:
 
 * A aplicação DEVE ser desenvolvida utilizando a abordagem [API-First](https://swagger.io/resources/articles/adopting-an-api-first-approach/) com a especificação [OpenAPI 2.0 - Swagger](https://swagger.io/docs/specification/2-0/what-is-swagger/). Ou seja, o primeiro passo DEVE ser a criação de um arquivo YAML com a descrição da API com as operações e objetos que a aplicação irá suportar.
-* A aplicação DEVE conter a implementação de todas as operações CRUD, ou seja, POST para criar, GET para ler, PUT e/ou PATH para atualizar e DELETE para remover. Apenas a entidade _carro_ DEVE ter as operações CRUD implementadas, as demais podem ser trabalhadas com cargas iniciais.
+* A aplicação DEVE conter a implementação de todas as operações CRUD, ou seja, POST para criar, GET para ler, PUT e/ou PATCH para atualizar e DELETE para remover. Apenas a entidade _carro_ DEVE ter as operações CRUD implementadas, as demais podem ser trabalhadas com cargas iniciais.
   * **Notas**:
-    * No estilo RESTful o PUT é utilizado para realizar uma atualização completa na entidade e o PATH para atualizações parciais. A atualização em si no estilo RESTful envolve algumas técnicas mais complexas, mas para este exercício o candidato poderá optar por qualquer um dos verbos sem se preocupar com essas complexidades, apenas em realizar a operação de UPDATE.
+    * No estilo RESTful o PUT é utilizado para realizar uma atualização completa na entidade e o PATCH para atualizações parciais. A atualização em si no estilo RESTful envolve algumas técnicas mais complexas, mas para este exercício o candidato poderá optar por qualquer um dos verbos sem se preocupar com essas complexidades, apenas em realizar a operação de UPDATE.
     * A implementação de referência utiliza o H2 como banco de dados e possui exemplo de carga inicial. A utilização do H2 DEVE ser mantida.
 * A representação de resposta dos recursos da API DEVE conter atributos não existentes nas entidades do banco de dados, ou seja atributos calculados.
 * A aplicação DEVE conter testes unitários.
